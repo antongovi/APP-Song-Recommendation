@@ -7,8 +7,8 @@ from spotipy.client import SpotifyException
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Spotify API credentials
-client_id = '4bfcfc5810374447b13d593925b9fbd3'
-client_secret = 'ca478fcf869042cc954b1dc6cb463d3f'
+client_id = st.secrets["client_id"]
+client_secret = st.secrets["client_secret"]
 
 # Initialize Spotipy client
 client_credentials = f"{client_id}:{client_secret}"
